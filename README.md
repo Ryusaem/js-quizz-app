@@ -1,6 +1,6 @@
 # QUIZZ APP
 
-This is a solution to the [Social links profile challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This a project from an UDEMY course where we built a quizz app alongside a teacher. It was fun, but I can't recommand such project because they give you the illusion of learning something...In reality you did understand a lot of thing, because you didn't exercises your mind enough through the problem and logic.
 
 ## Table of contents
 
@@ -38,6 +38,9 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 - Live Site URL: [Github Live Demo](https://ryusaem.github.io/js-quizz-app/)
 
 ## My process
+
+- My process was almost zero because I followed the instruction of the professor so I did not take the time to think about the application, the code, the logic yet.
+- It is important for me to take the time to understand the process of my code, to be able to use it in different circumstances.
 
 ### Built with
 
@@ -129,11 +132,9 @@ This process ensures that each question from the API is reformatted with both th
 
 ### Continued development
 
-- Animation in CSS.
-- Flexbox (the power of using margin inside any flex item).
-- Responsivity (Media query understanding).
-- Knowing how much a project is going to take as time.
-- Learning to deconstruct a website in a Flexbox way to be much more efficient.
+- Continue the road of of learning more about API and fetch.
+- Improve my understanding of object.
+- Learning more to make my page as beautiful as he did, with high speed.
 
 ### Useful resources
 

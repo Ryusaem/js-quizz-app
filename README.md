@@ -2,6 +2,16 @@
 
 This a project from an UDEMY course where we built a quizz app alongside a teacher. It was fun, but I can't recommand such project because they give you the illusion of learning something...In reality you did understand a lot of thing, because you didn't exercises your mind enough through the problem and logic.
 
+- Need to fix "end.html" for online version
+
+  - When the progam have to end, cannot find the end page
+  - When I save a score, it redirect me to an unknow page
+    - Edit: end.js:
+      - from: window.location.assign("/");
+      - to: window.location.assign("index.html");
+
+- Need to fix local score
+
 ## Table of contents
 
 - [Overview](#overview)

@@ -73,12 +73,31 @@ This a project from an UDEMY course where we built a quizz app alongside a teach
 
 ### What I learned
 
-- progress BAR hud
+1. How to access local Storage. So it allow us to access some information that we saved in the memory, pretty useful. And we also learn how to edit the locat file. As you can see, both revolve around the property "localStorage" (JSON.parse(localStorage.getItem("element")) and localStorage.setItem("element", JSON.stringify(content))).
+
+```js
+// GET (read) element from local storage
+const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
+```
+
+```js
+// SET (write) element from local storage
+localStorage.setItem("highScores", JSON.stringify(highScores));
+```
+
+---
+
+2. We learn how to cleverly build a progress bar that progress with each question. The math is simple yet efficient (questionCounter / MAX_QUESTIONS) \* 100% ... we also use backticks (or literal string) to cleverly add this calculation, and at the end we add the "%"
 
 ```html
 <div id="progressBar">
   <div id="progressBarFull"></div>
 </div>
+```
+
+```js
+//Update the progress bar progressBarFull.style.width =
+`${(questionCounter / MAX_QUESTIONS) * 100}%`;
 ```
 
 ```css
@@ -110,10 +129,7 @@ This a project from an UDEMY course where we built a quizz app alongside a teach
 }
 ```
 
-```js
-//Update the progress bar progressBarFull.style.width =
-`${(questionCounter / MAX_QUESTIONS) * 100}%`;
-```
+---
 
 - linking website to different page
 

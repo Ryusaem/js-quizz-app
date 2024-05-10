@@ -2,15 +2,26 @@
 
 This a project from an UDEMY course where we built a quizz app alongside a teacher. It was fun, but I can't recommand such project because they give you the illusion of learning something...In reality you did understand a lot of thing, because you didn't exercises your mind enough through the problem and logic.
 
-- Need to fix "end.html" for online version
+# TO FIX
 
-  - When the progam have to end, cannot find the end page
-  - When I save a score, it redirect me to an unknow page
-    - Edit: end.js:
-      - from: window.location.assign("/");
-      - to: window.location.assign("index.html");
+- None
 
-- Need to fix local score
+# OLD BUG
+
+- When the APP end, cannot find the end page
+  - Solution (FIX): game.js:
+    - from (line 66): return window.location.assign("/end.html");
+    - to (line 66): return window.location.assign("end.html");
+- When I save a score after a game, it redirect me to an unknown page
+  - Solution (FIX): end.js:
+    - from (line 28): window.location.assign("/");
+    - to (line 28): window.location.assign("index.html");
+    - When we save a score, nothing happen in the local/online repository
+- Solution (FIX): highscores.html
+  - from (line): <script src="js/highscores.js"></script>
+  - to (line): <script src="js/highscores.js" defer></script>
+  - error message: The error message Uncaught TypeError: can't access property "innerHTML", highScoresList is null indicates that the script is trying to access the highScoresList element before it is available in the DOM. This situation often arises when the JavaScript code executes before the HTML elements it references have been fully loaded into the browser.
+  - solution: Using the defer attribute with your <script>. When you include defer in your script tag, it instructs the browser to execute the JavaScript file after the HTML document has been completely parsed but before the DOMContentLoaded event.
 
 ## Table of contents
 
